@@ -1,0 +1,480 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+
+    overflow-x: hidden;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    font-weight: 100;
+}
+h2 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+h3 {
+    padding-top: 5px;
+    font-weight: 100;
+}
+h4 {
+    padding-top: 5px;
+    font-weight: 100;
+}
+p {
+    color: rgba(128, 128, 128, 0.897);
+    line-height: 20px;
+    text-align: justify;
+}
+abbr {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    
+    justify-content: space-around;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    
+    padding: 10px 20px;
+
+    background: rgba(54, 231, 255, 0.1);
+    border-bottom: 2px solid rgb(0, 150, 137);
+
+    z-index: 10;
+}
+
+nav a:link, a:visited {
+    border-bottom: 1px solid rgba(54, 231, 255, 0);
+}
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+nav ul li {
+    color: white;
+    padding: 10px 15px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.divisor {
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 400px;
+    text-indent: -3000px;
+
+    background: url(../img/icon-seta.png) no-repeat center; 
+}
+
+.ordenar-1 {
+    order: 1;
+}
+.ordenar-2 {
+    order: 2;
+}
+.ordenar-3 {
+    order: 3;
+}
+
+section#inicio p.texto-apresentacao {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+section#inicio strong {
+    font-size: 2em;
+    font-weight: 100;
+    color: rgb(16, 190, 176);
+}
+
+section#inicio span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.area-botoes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.area-botoes a {
+    border: 2px solid;
+    border-radius: 10px;
+    
+    padding: 8px 10px;
+    margin-right: 20px;
+}
+.area-botoes a:hover{
+    background-color: rgba(54, 231, 255, 0.1)
+}
+
+div.forcar-branco {
+    display: inline;
+    color: white !important;
+}
+
+a.linkedin {
+    border-color: rgb(9, 97, 184);
+}
+
+a.linkedin:hover {
+    color: rgb(9, 97, 184);
+}
+
+a.github {
+    border-color: rgb(49, 0, 105);
+}
+a.github:hover {
+    color: rgb(49, 0, 105);
+}
+
+a.gmail:hover {
+    color: rgb(185, 0, 0);
+}
+
+img.foto-programador {
+    border-right: 10px solid rgb(0, 150, 137);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+section#sobre article.primario {
+    width: 50%;
+    min-width: 400px;
+}
+section#sobre article.secundario {
+    width: 30%;
+    min-width: 400px;
+    text-align: center;
+}
+
+section#sobre .area-botoes {
+    text-align: left;
+
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+img.foto-perfil {
+    width: 90%;
+
+    -webkit-box-shadow: 2px 3px 8px rgba(54, 231, 255, 0.1);
+    box-shadow: 2px 3px 8px rgba(54, 231, 255, 0.1);
+
+    border-left: 5px solid rgba(54, 231, 255, 0.1);
+    opacity: 0.6;
+}
+
+img.foto-perfil:hover {
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+
+    border-left: 5px solid rgb(0, 150, 137);
+    opacity: 0.9;
+}
+
+a.botao-cv {
+    border-color: rgb(0, 150, 137);
+}
+
+a.botao-cv:hover {
+    color: rgb(0, 150, 137);
+}
+
+section#projetos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack:first baseline;
+    -ms-flex-pack:first baseline;
+    justify-content: space-around;
+
+    padding-bottom: 50px;
+}
+
+section#projetos article {
+    background: rgba(92, 92, 92, 0.4);
+    -webkit-box-shadow: 2px 3px 10px rgba(54, 231, 255, 0.1);
+    box-shadow: 2px 3px 10px rgba(54, 231, 255, 0.1);
+
+    width: 45%;
+    min-width: 400px;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section#projetos article a {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+section#projetos article a:hover {
+    text-decoration: underline;
+}
+
+section#projetos article p {
+    width: 80%;
+    margin: 0 auto;
+    text-align-last: center;
+}
+
+section#projetos article img {
+    border-radius: 50px;
+
+    width: 90%;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+article.em-breve a {
+    color: rgb(185, 0, 0);
+    cursor: default;
+}
+article.em-breve span {
+    color: rgb(185, 0, 0);
+    font-size: 0.7em;
+    text-transform: uppercase;
+
+    display: block;
+}
+
+img.zoom {
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+img.zoom:hover {
+    -webkit-transform: scale(1.1);    
+    -ms-transform: scale(1.1);    
+    transform: scale(1.1);
+}
+
+footer {
+    background: url(../img/fundo-rodape.png) no-repeat top center;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.3em;
+    }
+
+    #btn-mobile {
+        display: block;
+        cursor: pointer;
+
+        border: none;
+        background: none;
+    }
+
+    ul#menu {
+        display: none;
+
+        position: absolute;
+        width: 100%;
+
+        background: rgba(54, 231, 255, 0.7);
+
+        top: 45px;
+        left: 0px;
+        
+        z-index: 1000;
+
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        display: block;
+        overflow-y: auto;
+    }    
+
+
+    #nav.active ul#menu li {
+        text-align: center;
+        border-bottom: 1px solid rgba(54, 231, 255, 0.1);
+    }
+
+    #nav.active ul#menu li.ultima {
+        border-bottom: 2px solid rgb(0, 150, 137);
+    }
+
+    #nav.active ul#menu li:hover {
+        background: rgba(54, 231, 255, 0.1);
+    }
+
+    #nav.active ul#menu li a:hover {
+        border: none;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+        color: white;
+
+        display: block;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        margin-top: 5px;
+        height: 2px;
+        background: currentColor;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    section#inicio {
+        padding-top: 60px;
+        justify-content: center;
+    }
+    section#inicio p.texto-apresentacao {
+        text-align: center;
+
+        font-size: 1.2em;
+    }
+
+    img.foto-programador {
+        display: none;
+    }
+    
+    .area-botoes a {
+        font-size: 0.8em;
+    }
+
+    .divisor {
+        display: none;
+    }
+
+    section#sobre article.primario {
+        min-width: 300px;
+    }
+
+    section#projetos article {
+        min-width: 360px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 1.7em;
+    }
+    
+    section#inicio p.texto-apresentacao {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+
+    section#sobre article.primario {
+        width: 560px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    section#inicio p.texto-apresentacao {
+        text-align: center;
+    }
+
+    section#projetos article {
+        width: 80%;    
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    article.em-breve span {
+        display: inline;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        justify-content: space-between;
+    }
+
+    section#inicio {
+        padding-top: 10%;
+    }
+
+    nav ul {
+        margin-right: 150px;
+    }
+
+    article.em-breve span {
+        display: inline;
+    }
+}
